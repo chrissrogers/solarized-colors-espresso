@@ -381,13 +381,13 @@ php identifier.function.support_pcre > delimiter.balanced.parenthesis + literal.
     font-weight: normal;
 }
 
+php > keyword.constant.class,
+php keyword.constant.std,
+php delimiter.balanced.parenthesis.begin + keyword.constant.other,
 php identifier.function.support > delimiter.balanced.parenthesis {
     color: #cb4b16;
 }
 
-php delimiter.balanced.parenthesis.begin + keyword.constant.other,
-php > keyword.constant.class,
-php keyword.constant.std,
 php keyword.constant.class.other > class.name,
 php keyword.constant.class.other > operator.scope.resolution,
 php identifier.variable.class.static.property property.name {
