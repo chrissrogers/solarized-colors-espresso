@@ -250,3 +250,153 @@ storage.type.js {
 }
 
 /* @end */
+
+/* @group PHP */
+php delimiter.balanced.quote{
+	color: #93a1a1;
+}
+
+php delimiter.balanced.curly-brace,
+php delimiter.balanced.parenthesis,
+php delimiter.balanced.square-brace {
+	color: #cb4b16;
+}
+
+php operator.mathematical,
+php operator.comparator,
+php operator.logical,
+php delimiter.separator.pairing,
+php keyword.constant.class {
+	color: #859900;
+}
+
+php delimiter.separator.comma,
+php literal.keyword.constant.echo {
+	color: #cb4b16;
+}
+
+php delimiter.terminator {
+	color: #93a1a1;
+}
+
+php identifier.constant {
+	color: #cb4b16;
+}
+
+php literal.keyword.constant.other {
+  color: #000;
+}
+
+php literal.string.quoted,
+php literal.string.quoted identifier.variable,
+php literal.string.quoted identifier.variable > operator.dollar-sign.variable.begin {
+    color: #2aa198;
+}
+
+php literal.keyword.nothing,
+php literal.keyword.bool {
+    color: #b58900;
+    font-weight: normal;
+}
+
+php integer, php literal.numeric {
+    color: #2aa198;
+	background-color: #002b36;
+}
+
+php identifier.variable,
+php identifier.variable.parameter  {
+    color: #268bd2;
+}
+
+php identifier.variable > operator.dollar-sign.variable.begin,
+php identifier.variable.parameter > variable.delimiter.begin {
+	color: #859900;
+}
+
+php metadata.comment.phpDoc.block {
+    color: #657b83;
+}
+php metadata.comment.phpDoc.keyword {
+    color: #93a1a1;
+}
+
+php keyword.modifier.scope {
+    color: #859900;
+}
+php keyword.definition.php,
+php delimiter.embedded.source.php.begin,
+php delimiter.embedded.source.php.end {
+    color: #dc322f;
+}
+php identifier.class.name,
+php container.class name {
+	color: #93a1a1;
+}
+php keyword.definition.class.begin {
+    color: #b58900;
+}
+
+php class.extended > name {
+    color: #93a1a1;
+    font-style: italic;
+}
+
+php keyword.function.definition {
+    color: #cb4b16;
+}
+
+php function > name {
+	color: #268bd2;
+}
+
+php container.function.magic.parenthesis-delimited > name,
+php keyword.definition.array,
+php identifier.function,
+php identifier.function.support > name,
+php identifier.function.support_pcre > name,
+php identifier.function.support_pcre literal.string.quoted,
+php identifier.function.support_pcre > delimiter.balanced.parenthesis + literal.string.quoted delimiter.balanced.quote {
+    color: #b58900;
+    font-weight: normal;
+}
+
+php identifier.function.support > delimiter.balanced.parenthesis {
+    color: #cb4b16;
+}
+
+php delimiter.balanced.parenthesis.begin + keyword.constant.other,
+php > keyword.constant.class,
+php keyword.constant.std,
+php keyword.constant.class.other > class.name,
+php keyword.constant.class.other > operator.scope.resolution,
+php identifier.variable.class.static.property property.name {
+    color: #268bd2;
+    font-weight: normal;
+}
+
+php identifier.function.class.method.static class.name {
+	color: #859900;
+}
+php identifier.function.class.method.static method.name {
+	color: #93a1a1;
+}
+
+php container keyword.constant.other,
+php > keyword.constant.other,
+php keyword.constant.class.other > keyword.constant.other {
+    color: #cb4b16;
+}
+
+php container.function.parenthesis-delimited > name,
+php > identifier.function.object.method > name {
+    color: #93a1a1;
+    font-weight: normal;
+}
+
+/* special case for: $class = __CLASS__; */
+php operator.accessor + keyword.constant.other {
+    color: #000;
+}
+
+/* @end */
