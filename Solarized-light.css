@@ -299,7 +299,6 @@ php literal.keyword.bool {
 
 php integer, php literal.numeric {
     color: #2aa198;
-	background-color: #002b36;
 }
 
 php identifier.variable,
