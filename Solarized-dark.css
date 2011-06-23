@@ -301,12 +301,10 @@ php delimiter.terminator {
 	color: #93a1a1;
 }
 
-php identifier.constant {
+php identifier.constant,
+php literal.keyword.constant.other,
+php operator.accessor + keyword.constant.other {
 	color: #cb4b16;
-}
-
-php literal.keyword.constant.other {
-  color: #000;
 }
 
 php literal.string.quoted,
@@ -414,11 +412,6 @@ php container.function.parenthesis-delimited > name,
 php > identifier.function.object.method > name {
     color: #93a1a1;
     font-weight: normal;
-}
-
-/* special case for: $class = __CLASS__; */
-php operator.accessor + keyword.constant.other {
-    color: #000;
 }
 
 /* @end */
